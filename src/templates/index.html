@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-Puzzle Solver</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>8-Puzzle Solver using A*</h1>
+    
+    <div class="container">
+        <div class="puzzle-section">
+            <h2>Start State</h2>
+            <div id="start-puzzle" class="puzzle-grid"></div>
+        </div>
+        
+        <div class="puzzle-section">
+            <h2>Goal State</h2>
+            <div id="goal-puzzle" class="puzzle-grid"></div>
+        </div>
+    </div>
+    
+    <div class="controls">
+        <button id="randomize-btn">Randomize Start</button>
+        <button id="solve-btn">Solve Puzzle</button>
+    </div>
+    
+    <div id="solution-display"></div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
