@@ -57,9 +57,9 @@ def solve():
         goal_board = data['goal_board']
         
         # Import your solver
-        from solver import solve_puzzle
-        
-        solution = solve_puzzle(start_board, goal_board)
+        from solver import solvePuzzle
+
+        solution = solvePuzzle(start_board, goal_board)
         
         if solution:
             return jsonify({'solution': solution, 'success': True})
